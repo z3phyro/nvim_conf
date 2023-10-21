@@ -9,4 +9,37 @@ return {
   --     require("lsp_signature").setup()
   --   end,
   -- },
+  {
+    "kylechui/nvim-surround",
+    version = "*", -- Use for stability; omit to use `main` branch for the latest features
+    event = "VeryLazy",
+    config = function()
+        require("nvim-surround").setup({
+            -- Configuration here, or leave empty to use defaults
+        })
+    end
+  },
+  -- {
+  --   "Wansmer/treesj",
+  --   version = "*", -- Use for stability; omit to use `main` branch for the latest features
+  --   keys = { "<space>m", "<CMD>TSJToggle<CR>", desc= "Toggle Treesitter join" },
+  --   dependencies = { "nvim-treesitter/nvim-treesitter" },
+  --   cmd = { "TSJToggle", "TSJSplit", "TSJJoin"},
+  --   opts = { use_default_keymaps = false},
+  -- },
+  {
+    "prettier/vim-prettier",
+    version = "*", -- Use for stability; omit to use `main` branch for the latest features
+    event = "VeryLazy",
+  },
+  {
+    "f-person/git-blame.nvim",
+    version = "*", -- Use for stability; omit to use `main` branch for the latest features
+    event = "VeryLazy",
+  },
+  {
+    "mg979/vim-visual-multi",
+    version = "*", -- Use for stability; omit to use `main` branch for the latest features
+    event = "VeryLazy",
+  }
 }
