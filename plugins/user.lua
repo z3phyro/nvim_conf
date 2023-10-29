@@ -14,9 +14,9 @@ return {
     version = "*", -- Use for stability; omit to use `main` branch for the latest features
     event = "VeryLazy",
     config = function()
-        require("nvim-surround").setup({
-            -- Configuration here, or leave empty to use defaults
-        })
+      require("nvim-surround").setup({
+        -- Configuration here, or leave empty to use defaults
+      })
     end
   },
   -- {
@@ -37,9 +37,17 @@ return {
     version = "*", -- Use for stability; omit to use `main` branch for the latest features
     event = "VeryLazy",
   },
-  {
-    "mg979/vim-visual-multi",
-    version = "*", -- Use for stability; omit to use `main` branch for the latest features
-    event = "VeryLazy",
-  }
+  -- {
+  --   "mg979/vim-visual-multi",
+  --   version = "*", -- Use for stability; omit to use `main` branch for the latest features
+  --   event = "VeryLazy",
+  --   config = function()
+  --     let g:VM_maps = {}
+
+  --     let g:VM_maps['Find Under']         = '<leader>d'
+  --     let g:VM_maps['Find Subword Under'] = '<leader>d'
+  --     let g:VM_maps["Select Cursor Down"] = '<M-C-Down>'
+  --     let g:VM_maps["Select Cursor Up"]   = '<M-C-Up>'
+  --   end
+  -- }
 }
