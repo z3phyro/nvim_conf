@@ -37,6 +37,7 @@ return {
     ["]<leader>"] = { "o<Esc>k", desc = "Create space above"},
     ["[<leader>"] = { "O<Esc>j", desc = "Create space below"},
     ["<C-/>"] = { "gcc", desc = "Comment code"},
+    ["U"] = {":redo<cr>"},
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
   },
